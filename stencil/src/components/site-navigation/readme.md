@@ -7,11 +7,10 @@
 
 ## Properties
 
-| Property     | Attribute | Description | Type       | Default     |
-| ------------ | --------- | ----------- | ---------- | ----------- |
-| `brand`      | `brand`   |             | `string`   | `undefined` |
-| `links`      | `links`   |             | `any`      | `undefined` |
-| `navigateTo` | --        |             | `Function` | `undefined` |
+| Property | Attribute | Description | Type     | Default     |
+| -------- | --------- | ----------- | -------- | ----------- |
+| `brand`  | `brand`   |             | `string` | `undefined` |
+| `links`  | `links`   |             | `any`    | `undefined` |
 
 
 ----------------------------------------------

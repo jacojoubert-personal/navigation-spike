@@ -8,14 +8,6 @@ import { Component, Prop, h } from '@stencil/core';
 export class SiteNavigation {
   @Prop() brand: string;
   @Prop() links: any;
-  @Prop() navigateTo: Function;
-
-  private onclick(event, url) {
-    if (this.navigateTo) {
-      event.preventDefault();
-      this.navigateTo(url);
-    }
-  };
 
   private linksObject() {
     if (typeof this.links === 'string') {
@@ -28,7 +20,7 @@ export class SiteNavigation {
   render() {
     let navItems = this.linksObject().map((link) =>
       <li>
-        <a href={link.url} onClick={(event) => this.onclick(event, link.url)}>
+        <a href={link.url}>
           {link.label}
         </a>
       </li>
@@ -36,7 +28,7 @@ export class SiteNavigation {
 
     return <div class="site-navigation">
       <ul>
-        <li><a href="/" onClick={(event) => this.onclick(event, "/")}>{this.brand}</a></li>
+        <li><a href="/">{this.brand}</a></li>
         {navItems}
       </ul>
     </div>;

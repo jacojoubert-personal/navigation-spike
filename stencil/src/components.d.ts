@@ -12,7 +12,6 @@ export namespace Components {
   interface SiteNavigation {
     'brand': string;
     'links': any;
-    'navigateTo': Function;
   }
 }
 
@@ -33,7 +32,6 @@ declare namespace LocalJSX {
   interface SiteNavigation extends JSXBase.HTMLAttributes<HTMLSiteNavigationElement> {
     'brand'?: string;
     'links'?: any;
-    'navigateTo'?: Function;
   }
 
   interface IntrinsicElements {
