@@ -1,0 +1,1 @@
+System.register(["./p-dcaf345d.system.js"],(function(){"use strict";var t,n;return{setters:[function(e){t=e.p;n=e.b}],execute:function(){t().then((function(t){return n([["p-qvkywnaj.system",[[1,"site-navigation",{brand:[1],links:[8],navigateTo:[16]}]]]],t)}))}}}));

@@ -1,0 +1,9 @@
+<site-navigation
+  brand="outdoorsy"
+  links={{array
+    (hash url=(href-to "dashboard") label="Dashboard")
+    (hash url=(href-to "inbox") label="Inbox")
+  }}
+  navigateTo={{action this.navigateTo}} />
+
+{{outlet}}
